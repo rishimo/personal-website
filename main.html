@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rishi Mohan</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	
+	</head>
+	
+  <body>
+  	<!-- body code goes here -->  
+	    
+	<img class="headshot fade_in_1_delay" src="media/headshot.jpg" alt="description" longdesc="desc.txt" />  
+	<h1 class="banner1 fade_in_1" style="font-size:3vw"><strong><em>Welcome.</em></strong></h1>
+	<h3 class="banner2 fade_in_1_delay" style="font-size:1.5vw"><em>My name is Rishi Mohan. Here's a little bit about me.</em></h3>
+	  
+  	<div class="navigation fade_in_1_delay2" style="font-size:1vw">
+	  
+		<a href="#test1"><em>About Me</em></a>
+	  	<a href="#test2"><em>Projects</em></a>
+	  	<a href="#test3"><em>Experience</em></a>
+	  	<a href="#test4"><em>Photography</em></a>
+	  
+	  </div>
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+  <script src="js/jquery-3.3.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/popper.min.js"></script>   	<script src="js/bootstrap-4.3.1.js"></script>
+  <canvas class="background fade_in_1"></canvas>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+  <script>
+     window.onload = function() {
+        Particles.init({
+          selector: '.background',
+          color: '#75A5B7',
+          maxParticles: 150,
+		  speed: .3,
+          connectParticles: true,
+          responsive: [
+            {
+              breakpoint: 768,
+              options: {
+                maxParticles: 80
+              }
+            }, {
+              breakpoint: 375,
+              options: {
+                maxParticles: 50
+              }
+            }
+          ]
+        });
+      };
+    </script>  
+</body>
+</html>
