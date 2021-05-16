@@ -16,7 +16,7 @@ padding: 0;
 	position:absolute;
 	top:50%;
 	left:50%;
-	-ms-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -200%);
     transform: translate(-50%, -200%);
 	z-index:1;
 	border-radius: 25%;
@@ -68,6 +68,17 @@ padding: 0;
 
 .navigation a:hover {
 	font-size:1.25vw;
+}
+
+.footer {
+    position: absolute;
+    color: aliceblue;
+    bottom: 0%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+	z-index:1;
+	white-space: nowrap;
 }
 
 /* Fade 1s */
@@ -166,4 +177,8 @@ padding: 0;
 	0% {opacity:0;}
 	66.66% {opacity:0;}
 	100% {opacity:1;}
+}
+
+.about{
+	display:none;
 }
