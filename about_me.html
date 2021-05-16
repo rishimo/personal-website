@@ -65,6 +65,7 @@
 		<script type="text/javascript">
       barba.init({
         transitions: [{
+		  sync:true,
           name: 'opacity-transition',
           leave(data) {
             return gsap.to(data.current.container, {
