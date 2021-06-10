@@ -1,49 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About | Rishi Mohan</title>
-	<link rel="shortcut icon" type="image/png" href="media/favico.png"/>
-    <!-- Bootstrap -->
-	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet" type="text/css">
-	
-	</head>
-	
-  <body data-barba="wrapper">
-  	<!-- body code goes here -->  
-	      
-	<main id="home" data-barba = "container" data-barba-namespace="about">
-		<!-- body code goes here -->  
- 		
-		<img class="headshot fade_in_1_delay" src="media/headshot2.jpg" alt="It's me!"/>
-		<h1 class="banner1 fade_in_1" style="font-size:3vw"><strong><em>About.</em></strong></h1>
-		<h3 class="banner2 fade_in_1_delay" style="font-size:1.25vw">
-		Rishi Mohan is a junior studying Industrial Engineering at the University of Illinois at Urbana-Champaign. <h3>
-		</h3>
-		<h3 class="banner3 fade_in_1_delay2" style="font-size:1.25vw">He can frequently be found working with the Illini Solar Car team, practicing photography around campus, or working at the Illini Union.
-		</h3>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About | Rishi Mohan</title>
+<link rel="shortcut icon" type="image/png" href="media/favico.png"/>
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
 
+<body data-barba="wrapper">
+<!-- body code goes here -->
 
-		
-	  </main>
-	  
+<main id="home" data-barba = "container" data-barba-namespace="about"> 
+  <!-- body code goes here --> 
+  
+  <img class="headshot fade_in_1_delay" src="media/headshot2.jpg" alt="It's me!"/>
+  <h1 class="banner1 fade_in_1" style="font-size:3vw"><strong><em>About.</em></strong></h1>
+  <h3 class="banner2 fade_in_1_delay" style="font-size:1.25vw"> Rishi Mohan is a junior studying Industrial Engineering at the University of Illinois at Urbana-Champaign. </h3>
+  <h3 class="banner3 fade_in_1_delay2" style="font-size:1.25vw">He can frequently be found working with the Illini Solar Car team, practicing photography around campus, or working at the Illini Union. </h3>
+</main>
 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.3.1.min.js"></script> 
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-	  <script src="js/jquery-3.3.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.3.1.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script> 
+<script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script> 
+<script src="https://unpkg.com/@barba/core"></script> 
 
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	  <script src="js/popper.min.js"></script>   	
-	  <script src="js/bootstrap-4.3.1.js"></script>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
-	  <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
-	  <script src="https://unpkg.com/@barba/core"></script>
-	  
-		<!-- script inits: particles.js, barba.js -->
-  		<script>
+<!-- script inits: particles.js, barba.js --> 
+<script>
      window.onload = function() {
         Particles.init({
           selector: '.background',
@@ -66,9 +57,16 @@
           ]
         });
       };
-    </script>  
-	  
-		<script type="text/javascript">
+    </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KGECC6G1HV"></script>
+<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-KGECC6G1HV');
+	</script>
+<script type="text/javascript">
       barba.init({
         transitions: [{
 		  sync:true,
@@ -85,12 +83,6 @@
         }]
       });
     </script>
-	
-	  
-	<canvas class="background fade_in_1"></canvas>
-	  
+<canvas class="background fade_in_1"></canvas>
 </body>
-	
-
-	
 </html>
