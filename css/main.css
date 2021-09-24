@@ -12,6 +12,24 @@ padding: 0;
 	z-index: 0;
 }
 
+.main {
+	display: flex;
+}
+
+.col_left {
+	color: aliceblue;
+	flex: 50%;
+	z-index: 1;
+	margin-top:25%;
+	margin-left:10%;
+	padding-right:10%;
+}
+
+.col_right {
+	color: aliceblue;
+	flex: 50%;
+}
+
 .headshot {
 	position:absolute;
 	top:50%;
@@ -20,8 +38,18 @@ padding: 0;
     transform: translate(-50%, -200%);
 	z-index:1;
 	border-radius: 25%;
-	width: 8vw;
-  	height: 8vw;
+	width: 9vw;
+  	height: 9vw;
+}
+
+.v_border {
+	border-left: 6px solid aliceblue;
+	height: 25%;
+	position: absolute;
+	left: 50%;
+	margin-left: -3px;
+	top: 50%;
+	z-index: 1;
 }
 
 .banner1 {
@@ -52,6 +80,17 @@ padding: 0;
     left: 50%;
     -ms-transform: translate(-50%, 150%);
     transform: translate(-50%, 150%);
+	z-index:1;
+	white-space: nowrap;
+}
+
+.banner4 {
+    position: absolute;
+    color: aliceblue;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, 350%);
+    transform: translate(-50%, 350%);
 	z-index:1;
 	white-space: nowrap;
 }
@@ -96,10 +135,10 @@ padding: 0;
 
 
 .fade_in_1 {
-	animation: fadeIn_1 linear 1s;
-	-webkit-animation: fadeIn_1 linear 1s;
-	-moz-animation: fadeIn_1 linear 1s;
-	-o-animation: fadeIn_1 linear 1s;
+	animation: fadeIn_1 linear .25s;
+	-webkit-animation: fadeIn_1 linear .25s;
+	-moz-animation: fadeIn_1 linear .25s;
+	-o-animation: fadeIn_1 linear .25s;
 }
 
 @keyframes fadeIn_1 {
@@ -126,10 +165,10 @@ padding: 0;
 
 
 .fade_in_1_delay {
-	animation: fadeIn_1_delay linear 2s;
-	-webkit-animation: fadeIn_1_delay linear 2s;
-	-moz-animation: fadeIn_1_delay linear 2s;
-	-o-animation: fadeIn_1_delay linear 2s;
+	animation: fadeIn_1_delay linear .5s;
+	-webkit-animation: fadeIn_1_delay linear .5s;
+	-moz-animation: fadeIn_1_delay linear .5s;
+	-o-animation: fadeIn_1_delay linear .5s;
 }
 
 @keyframes fadeIn_1_delay {
@@ -160,10 +199,10 @@ padding: 0;
 
 
 .fade_in_1_delay2 {
-	animation: fadeIn_1_delay2 linear 3s;
-	-webkit-animation: fadeIn_1_delay2 linear 3s;
-	-moz-animation: fadeIn_1_delay2 linear 3s;
-	-o-animation: fadeIn_1_delay2 linear 3s;
+	animation: fadeIn_1_delay2 linear .75s;
+	-webkit-animation: fadeIn_1_delay2 linear .75s;
+	-moz-animation: fadeIn_1_delay2 linear .75s;
+	-o-animation: fadeIn_1_delay2 linear .75s;
 }
 
 @keyframes fadeIn_1_delay2 {
