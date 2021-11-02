@@ -1,111 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
+
+<head>
+	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rishi Mohan</title>
-	<link rel="shortcut icon" type="image/png" href="media/favico.png"/>
-    <!-- Bootstrap -->
-	<link href="css/bootstrap-4.3.1.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet" type="text/css">
-	
-	</head>
-	
-  <body data-barba="wrapper">
-  	<!-- body code goes here -->  
-	      
-	<main id="home" data-barba = "container" data-barba-namespace="home">
-		<!-- body code goes here -->  
-  
-		<h1 class="banner1 fade_in_1" style="font-size:3vw"><strong><em>Welcome.</em></strong></h1>
-		<h3 class="banner2 fade_in_1_delay" style="font-size:1.5vw"><em>My name is Rishi Mohan.</em></h3>
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0">
+	<title>Rishi Mohan's website</title>
+	<link rel="shortcut icon" type="image/png" href="media/favico.png" />
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
 
-		<div class="navigation fade_in_1_delay2" style="font-size:1vw">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,500&display=swap"
+		rel="stylesheet">
 
-			<a href="about.html"><em>About</em></a>
-			<a href="#projects"><em>Projects</em></a>
-			<a href="#experience"><em>Experience</em></a>
-			<a href="#hobbies"><em>Portfolio</em></a>
+</head>
 
-		  </div>
-		
-	  </main>
-	  
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header_introduction">
+				<h1 class="banner1 fade_in_1" style="font-size:3vw"><strong><em>Hello!</em></strong></h1>
+				<h3 class="banner2 fade_in_1_delay" style="font-size:1.5vw"><em>My name is Rishi Mohan.</em></h3>
 
+				<div class="navigation fade_in_1_delay2" style="font-size:1vw">
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-	  <script src="js/jquery-3.3.1.min.js"></script>
+					<a href="#about"><u><em>About</em></u></a> &nbsp;&nbsp;&nbsp;
+					<a href="#projects"><u><em>Projects</em></u></a> &nbsp;&nbsp;&nbsp;
+					<a href="#gallery"><u><em>Gallery</em></u></a>
+				</div>
 
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	  <script src="js/popper.min.js"></script>   	
-	  <script src="js/bootstrap-4.3.1.js"></script>
-	  <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
-	  <script src="https://unpkg.com/gsap@latest/dist/gsap.min.js"></script>
-	  <script src="https://unpkg.com/@barba/core"></script>
-	  
-		<!-- script inits, particles.js, barba.js -->
-  		<script>
-     window.onload = function() {
-        Particles.init({
-          selector: '.background',
-          color: '#75A5B7',
-          maxParticles: 150,
-		  speed: .3,
-          connectParticles: true,
-          responsive: [
-            {
-              breakpoint: 768,
-              options: {
-                maxParticles: 80
-              }
-            }, {
-              breakpoint: 375,
-              options: {
-                maxParticles: 50
-              }
-            }
-          ]
-        });
-      };
-    </script>  
-	  
-		<script type="text/javascript">
-      barba.init({
-        transitions: [{
-		  sync:true,
-          name: 'opacity-transition',
-          leave(data) {
-            return gsap.to(data.current.container, {
-              opacity: 0
-            });
-          },
-          enter(data) {
-            return gsap.from(data.next.container, {
-            });
-          }
-        }]
-      });
-    </script>
-	  <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-KGECC6G1HV"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+			</div>
+		</div>
 
-	  gtag('config', 'G-KGECC6G1HV');
-	</script>
-	<footer>
-	
-		<a href="about.html" class="footer fade_in_1_delay2" style="font-size:.65vw">Contact  Information</a>
-	
-	</footer>	
-	  
-	<canvas class="background fade_in_1"></canvas>
-	  
+		<a class="header_scroll scroll" href="#more_stuff">
+			<img src="media/arrow-down.svg">
+		</a>
+
+		<canvas class="header_background"></canvas>
+	</header>
+
+	<div class="more_stuff">
+		<a name="more_stuff"></a>
+
+		<div class="container container-large">
+			<div class="about">
+				<a name="about"></a>
+				<h2 style = "font-size:1.5vw"> About </h2>
+				<img class="headshot fade_in_1_delay" src="media/headshot2.jpg" alt="It's me!" />
+				<p>I'm Rishi - thanks for stopping by! <br>
+					I am a junior studying Industrial Engineering at the University of Illinois at Urbana Champaign.
+					<br>
+					I am an engineer, maker, and photographer. You can see some of my photos below, at the <a href = "#gallery"> gallery </a>. <br>
+					I am the <a href="http://www.illinisolarcar.com"> Illini Solar Car </a> team's Director of
+					Operations
+					and am a Multimedia Student Manager at the <a
+						href="https://union.illinois.edu/plan-an-event/multimedia/"> Illini Union </a>./p>
+			</div>
+
+			<div class="projects">
+				<a name="projects"></a>
+			</div>
+
+			<div class="gallery">
+				<a name="gallery"></a>
+			</div>
+		</div>
+	</div>
+
 </body>
-	
 
-	
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+
+<!-- script inits, particles.js -->
+<script>
+	window.onload = function () {
+		Particles.init({
+			selector: '.header_background',
+			color: '#75A5B7',
+			maxParticles: 150,
+			speed: .3,
+			connectParticles: true,
+			responsive: [
+				{
+					breakpoint: 768,
+					options: {
+						maxParticles: 80
+					}
+				}, {
+					breakpoint: 375,
+					options: {
+						maxParticles: 50
+					}
+				}
+			]
+		});
+	};
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KGECC6G1HV"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag() { dataLayer.push(arguments); }
+	gtag('js', new Date());
+
+	gtag('config', 'G-KGECC6G1HV');
+</script>
+
+</body>
+
+
+
 </html>
