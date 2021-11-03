@@ -8,9 +8,9 @@ HTML and CSS largely by me, using bootstrap 4.3.1 default stylesheet as a founda
 Credit to [marcbruederlin](https://github.com/marcbruederlin) for his fantastic [particles.js](https://github.com/marcbruederlin/particles.js) script.
 
 todo, rough priorities order:
-[x] totally revised one-pager 
-[x] finish about section
-[ ] work on projects section
-[ ] compile gallery images
-[ ] implement gallery (dynamically generated?)
-[ ] improve things >:)
+1. [x] totally revised one-pager 
+2. [x] finish about section
+3. [ ] work on projects section
+4. [ ] compile gallery images
+5. [ ] implement gallery (dynamically generated?)
+6. [ ] improve things >:)
